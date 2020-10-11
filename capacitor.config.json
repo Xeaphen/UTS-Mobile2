@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "MikhailAresa_00000019452_IF733_AL_UTS",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
