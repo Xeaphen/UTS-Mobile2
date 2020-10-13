@@ -1,0 +1,29 @@
+<ion-list>
+  <ion-item *ngFor="let barang of barangs" [routerLink]="['../',barang.id]">
+    <ion-thumbnail>
+      <ion-img [src]="barang.gambar"></ion-img>
+    </ion-thumbnail>
+    <ion-grid>
+      <ion-row>
+        <ion-label>
+          Manufaktur: {{barang.merek}}
+        </ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-label>
+          Model yang Terserdia : {{barang.model}}
+        </ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-label>
+          Harga : {{barang.harga}}
+        </ion-label>
+      </ion-row>
+      <ion-row>
+        <ion-label>
+           Stock : {{barang.stock}}
+        </ion-label>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+</ion-list>

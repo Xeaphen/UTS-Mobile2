@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button defaultHref="/home" slot="start"></ion-back-button>
+    <ion-title>{{loadedBarang.model}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]="loadedBarang.gambar"></ion-img>
+    <ion-card-header>
+      <ion-card-title>{{loadedBarang.merek}}</ion-card-title>
+      <ion-card-subtitle>harga: Rp.{{loadedBarang.harga}}</ion-card-subtitle>
+      <ion-card-subtitle> Stock: {{loadedBarang.stock}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{loadedBarang.deskripsi}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
